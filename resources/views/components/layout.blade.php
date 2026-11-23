@@ -13,9 +13,9 @@
         </header>
 
         <sidebar>
-            @if (session('status'))
+            @if (session('message'))
                 <div class="status-message">
-                    {{ session('status') }}
+                    {{ session('message') }}
                 </div>
             @endif
         </sidebar>
