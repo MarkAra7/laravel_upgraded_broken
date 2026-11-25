@@ -14,4 +14,16 @@ class Product extends Model
         'quantity',
         'description'
     ];
+
+    public function increseQuantity(int $amount): bool{
+        $this->quantity+=$amount;
+        return $this->save();
+    }
+    public function decreaseQuantity(int $amount): bool
+    {
+   
+        $this->quantity = max(0, $this->quantity - $amount);
+        
+        return $this->save();
+    }
 }

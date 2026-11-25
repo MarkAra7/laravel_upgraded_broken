@@ -23,4 +23,17 @@
         @method('DELETE')
         <input type="submit" value="Delete">
     </form>
+    <form  action="{{route('products.decrese',$product)}}" method="post">
+        @csrf
+        @method('PUT')
+        <input style="display:none" name="amount" type="number" value="1">
+      <input type="submit" value="Decrese">
+    </form>
+      
+    <form  action="{{route('products.increse',$product)}}" method="post">
+          @csrf
+        @method('PUT')
+        <input style="display:none" name="amount" type="number" value="1">
+      <input type="submit" value="Increse">
+    </form>
 </x-layout>
