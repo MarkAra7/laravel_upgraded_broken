@@ -14,4 +14,8 @@ class Product extends Model
         'quantity',
         'description'
     ];
+
+    public function products_tags() : HasMany{
+        return $this->hasMany(Product_Tag::class);
+    }
 }
