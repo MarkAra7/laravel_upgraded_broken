@@ -192,3 +192,16 @@ form input[type="submit"]:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/* Tables */
+table{
+    border-spacing: 0;
+    border: solid black 1px;
+}
+th{
+    border: solid black 1px;
+    font-weight: bold;
+}
+td{
+    border: solid black 1px;
+}

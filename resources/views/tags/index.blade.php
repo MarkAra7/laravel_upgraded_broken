@@ -9,7 +9,12 @@
                 <th>tag id</th>
                 <th>name</th>
             </tr>
-            <!-- content loop -->
+            @foreach($tags as $tag)
+                <tr>
+                    <td>{{$tag->id}}</td>
+                    <td>{{$tag->name}}</td>
+                </tr>
+            @endforeach
         </table>
     @endif
 </x-layout>
